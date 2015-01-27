@@ -1,2 +1,10 @@
-<h1>Home#dashboard</h1>
-<p>Find me in app/views/home/dashboard.html.erb</p>
+<h1>Pick Your Time Zone</h1>
+<%= form_tag do %>
+  <%= select_tag "time_zone", options_for_select([ "Pacific", "Mountain", "Central", "Eastern" ]) %>
+
+  <%= submit_tag %>
+<% end %>
+
+<p>You picked: <%= @time_zone %></p>
+
+<p>Your current time is: <%= @time.strftime("%R") %></p>

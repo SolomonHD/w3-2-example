@@ -1,2 +1,31 @@
 <h1>Solomon is Awesome</h1>
-<p>Find me in app/views/home/login.html.erb</p>
+<p>How many awesome points do you want to give him?</p>
+
+<p>The color you picked was: <%= params[:garbage] %></p>
+
+<form>
+  <select name="choice">
+    <option>Yes</option>
+    <option>No</option>
+    <option>Unsure</option>
+  </select>
+  <select name="favorite_color">
+    <option value="#0000FF">Blue</option>
+    <option value="#FF0000">Red</option>
+    <option value="#CC88AA">Goat-colored</option>
+  </select>
+
+  <input type="text" name="name"></input>
+
+  <input type="checkbox" name="one"></input>
+
+  <input type="checkbox" name="two"></input>
+
+
+
+  <input type="radio" name="three" value="left"></input>
+
+  <input type="radio" name="three" value="right"></input>
+
+  <button>Submit?</button>
+</form>
